@@ -28,9 +28,9 @@ Want to contribute to this extension? The quickest way is to <a href="https://he
 
 If you encounter any problems or bugs, please <a href="https://github.com/mageprince/magento2-buynow/issues">open an issue</a> on GitHub.
 
-<b>Category View Page</b>
+<b>Admin Configuration</b>
 
-<img src="https://image.ibb.co/fGJvgm/add_to_cart.png" alt="Adding-SS" title="Screenshot 1">
+<!-- <img src="https://image.ibb.co/fGJvgm/add_to_cart.png" alt="Adding-SS" title="Screenshot 1"> -->
 
 ## Prerequisites
 
