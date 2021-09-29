@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="nadeem_pdffileattachment_invoiceattachment" resource="default" engine="innodb" comment="nadeem_pdffileattachment_invoiceattachment Table">
+		<column xsi:type="smallint" name="invoiceattachment_id" padding="6" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="invoiceattachment_id"/>
+		</constraint>
+		<column name="id" nullable="true" xsi:type="text" comment="id"/>
+	</table>
+</schema>
