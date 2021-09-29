@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route url="/V1/nadeem-invoiceattachment/invoiceattachment" method="POST">
+		<service class="Nadeem\InvoiceAttachment\Api\InvoiceAttachmentRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Nadeem_InvoiceAttachment::InvoiceAttachment_save"/>
+		</resources>
+	</route>
+	<route url="/V1/nadeem-invoiceattachment/invoiceattachment/search" method="GET">
+		<service class="Nadeem\InvoiceAttachment\Api\InvoiceAttachmentRepositoryInterface" method="getList"/>
+		<resources>
+			<resource ref="Nadeem_InvoiceAttachment::InvoiceAttachment_view"/>
+		</resources>
+	</route>
+	<route url="/V1/nadeem-invoiceattachment/invoiceattachment/:invoiceattachmentId" method="GET">
+		<service class="Nadeem\InvoiceAttachment\Api\InvoiceAttachmentRepositoryInterface" method="get"/>
+		<resources>
+			<resource ref="Nadeem_InvoiceAttachment::InvoiceAttachment_view"/>
+		</resources>
+	</route>
+	<route url="/V1/nadeem-invoiceattachment/invoiceattachment/:invoiceattachmentId" method="PUT">
+		<service class="Nadeem\InvoiceAttachment\Api\InvoiceAttachmentRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Nadeem_InvoiceAttachment::InvoiceAttachment_update"/>
+		</resources>
+	</route>
+	<route url="/V1/nadeem-invoiceattachment/invoiceattachment/:invoiceattachmentId" method="DELETE">
+		<service class="Nadeem\InvoiceAttachment\Api\InvoiceAttachmentRepositoryInterface" method="deleteById"/>
+		<resources>
+			<resource ref="Nadeem_InvoiceAttachment::InvoiceAttachment_delete"/>
+		</resources>
+	</route>
+</routes>
