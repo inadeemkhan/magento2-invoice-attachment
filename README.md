@@ -11,14 +11,28 @@ Free magento 2 extension To attached Pdf file In Invoice from Admin sales Sectio
 4. Looks like core functionality of Magento (at backend as well as frontend)
 5. Unencrypted code for easy customization
 
-# Installation Instruction
+## Installation
+\* = in production please use the `--keep-generated` option
 
-* Copy the content of the repo to the <b>app/code/Magelumen/InvoicePDF/</b> folder
-* Run command:
-<b>php bin/magento setup:upgrade</b>
-* Run Command:
-<b>php bin/magento setup:static-content:deploy</b>
-* Now Flush Cache: <b>php bin/magento cache:flush</b>
+### Type 1: Zip file
+
+ - Unzip the zip file in `app/code/Nadeem`
+ - Enable the module by running `php bin/magento module:enable Nadeem_PdfFileAttachment`
+ - Apply database updates by running `php bin/magento setup:upgrade`\*
+ - Flush the cache by running `php bin/magento cache:flush`
+
+### Type 2: Composer
+
+ - Make the module available in a composer repository for example:
+    - private repository `repo.magento.com`
+    - public repository `packagist.org`
+    - public github repository as vcs
+ - Add the composer repository to the configuration by running `composer config repositories.repo.magento.com composer https://repo.magento.com/`
+ - Install the module composer by running `composer require nadeem/module-pdffileattachment`
+ - enable the module by running `php bin/magento module:enable Nadeem_PdfFileAttachment`
+ - apply database updates by running `php bin/magento setup:upgrade`\*
+ - Flush the cache by running `php bin/magento cache:flush`
+
 
 # Contribution
 
