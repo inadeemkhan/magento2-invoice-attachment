@@ -1,7 +1,5 @@
 # Magento2 Invoice Attachment
-Free magento 2 extension To attached Pdf file In Invoice from Admin sales Section
-
-<img src="https://i.ibb.co/wKntK7k/Magento2-4.png" alt="Magento2-4" border="0">
+Magento 2 extension To attached Pdf file In Invoice from Admin sales Section
 
 ## Features:
 
